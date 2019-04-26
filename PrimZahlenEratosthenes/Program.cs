@@ -17,11 +17,8 @@ namespace PrimZahlenEratosthenes
             
             p.ShowRequest("Bestimmen Sie die Länge des Arrays");
             p.CreatingTheArray(p.length);
-            // p.CheckingTheNumbers(p.TheArray);
-            //p.ShowTheArray(p.TheArray);
-
-            p.FillArrayWithPrim(p.TheArray);
-            p.ShowTheArray(p.FillArrayWithPrim(p.TheArray));
+            p.CheckingTheNumbers(p.TheArray);
+            p.ShowTheArray(p.TheArray);
 
             Console.ReadKey();
         }
@@ -53,17 +50,6 @@ namespace PrimZahlenEratosthenes
                 }                            
             }
             TheArray = arr;
-        }
-        int[] FillArrayWithPrim(int[] arr)
-        {
-            int[] primArr = new int[arr.Length + 1];
-            primArr[0] = 2;
-            for (int i = 0; i < length; i++)
-            {
-
-            }
-            
-            return primArr;
         }
         void ShowTheArray(int[] arr)
         {
